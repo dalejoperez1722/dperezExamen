@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dperezExamen.Page3">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" HorizontalTextAlignment="End" FontSize="18" TextColor="Red" />
+            <Label Text="RESUMEN" HorizontalTextAlignment="Center" FontSize="26" TextColor="Blue"/>
+            <Label Text=""/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="NOMBRE" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Row="0" Grid.Column="1" IsReadOnly="True"/>
+                
+                <Label Text="APELLIDO" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtApellido" Placeholder="Apellido" Grid.Row="1" Grid.Column="1" IsReadOnly="True"/>
+                
+                <Label Text="EDAD" FontSize="20" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtEdad" Placeholder="Edad" Grid.Row="2" Grid.Column="1" IsReadOnly="True"/>
+                
+                <Label Text="FECHA" FontSize="20" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtFecha" Placeholder="Fecha" Grid.Row="3" Grid.Column="1"  IsReadOnly="True"/>
+                
+                <Label Text="PAIS" FontSize="20" Grid.Row="4" Grid.Column="0"/>
+                <Entry x:Name="txtPais" Placeholder="Pais" Grid.Row="4" Grid.Column="1" IsReadOnly="True"/>
+                
+                <Label Text="CIUDAD" FontSize="20" Grid.Row="5" Grid.Column="0"/>
+                <Entry x:Name="txtCiudad" Placeholder="Ciudad" Grid.Row="5" Grid.Column="1" IsReadOnly="True"/>
+                
+                <Label Text="MONTO INICIAL" FontSize="20" Grid.Row="6" Grid.Column="0"/>
+                <Entry x:Name="txtMontoInicial" Placeholder="Monto Inicial" Grid.Row="6" Grid.Column="1" IsReadOnly="True"/>
+                
+                <Label Text="PAGO MENSUAL" FontSize="20" Grid.Row="7" Grid.Column="0"/>
+                <Entry x:Name="txtPagoMensual" Placeholder="Pago Mensual" Grid.Row="7" Grid.Column="1" IsReadOnly="True"/>
+                
+                <Label Text="PAGO TOTAL" FontSize="20" Grid.Row="8" Grid.Column="0"/>
+                <Entry x:Name="txtPagoTotal" Placeholder="Pago Total" Grid.Row="8" Grid.Column="1" IsReadOnly="True"/>
+
+            </Grid>
+            <Button x:Name="btnSalir" Text="Salir" Clicked="btnSalir_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
